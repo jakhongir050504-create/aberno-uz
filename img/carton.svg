@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <ellipse cx="100" cy="178" rx="80" ry="9" fill="#13213c" opacity=".14"/>
+  <!-- ustki yuz -->
+  <path d="M22 76l38-30h118l-38 30z" fill="#e3c08e"/>
+  <path d="M60 46l-38 30M100 46l-38 30" stroke="#c9a06a" stroke-width="1"/>
+  <rect x="86" y="54" width="44" height="8" fill="#f0b429" transform="skewX(-50)" opacity=".85"/>
+  <!-- yon yuz -->
+  <path d="M140 76l38-30v94l-38 34z" fill="#b98a4e"/>
+  <!-- old yuz -->
+  <rect x="22" y="76" width="118" height="98" fill="#d4ad75"/>
+  <rect x="34" y="92" width="94" height="56" rx="6" fill="#fff8e3"/>
+  <text x="81" y="114" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-weight="700" font-size="15" fill="#9a6400">Margaritto</text>
+  <text x="81" y="128" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-weight="800" font-size="7.5" fill="#13213c" letter-spacing=".8">QANDOLATCHILIK</text>
+  <text x="81" y="141" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-weight="800" font-size="9" fill="#e8772e">10 kg</text>
+  <path d="M40 158h20M40 164h32" stroke="#a97f47" stroke-width="2" stroke-linecap="round"/>
+  <!-- belgi -->
+  <path d="M112 158l4-6 4 6M116 152v14M124 158l4-6 4 6M128 152v14" stroke="#a97f47" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+</svg>

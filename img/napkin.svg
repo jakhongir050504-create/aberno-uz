@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="nf" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e4edf6"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="100" cy="178" rx="72" ry="8" fill="#13213c" opacity=".12"/>
+  <!-- chiqib turgan salfetkalar -->
+  <rect x="50" y="34" width="96" height="72" rx="4" fill="#fff" stroke="#d3e0ec" transform="rotate(-9 98 70)"/>
+  <rect x="54" y="30" width="96" height="72" rx="4" fill="#fff" stroke="#d3e0ec" transform="rotate(6 102 66)"/>
+  <path d="M60 40l84 8M62 52l80 7" stroke="#e6eef6" stroke-width="1.2" transform="rotate(6 102 66)"/>
+  <!-- qadoq -->
+  <path d="M28 88l14-10h116l14 10z" fill="#bcd3e7"/>
+  <rect x="28" y="88" width="144" height="84" rx="10" fill="url(#nf)" stroke="#d3e0ec" stroke-width="1.5"/>
+  <path d="M28 98a10 10 0 0 1 10-10h124a10 10 0 0 1 10 10v16H28z" fill="#3d9be0"/>
+  <path d="M68 146a8 8 0 0 1 1-16 11 11 0 0 1 21-3 8 8 0 0 1 10 9 7 7 0 0 1-1 10z" fill="#3d9be0"/>
+  <text x="108" y="144" font-family="Manrope, Arial, sans-serif" font-weight="800" font-size="18" fill="#1f5f92">BULUT</text>
+  <text x="108" y="158" font-family="Manrope, Arial, sans-serif" font-weight="600" font-size="9" fill="#5d6678">salfetka</text>
+  <circle cx="44" cy="106" r="3" fill="#fff" opacity=".7"/>
+  <circle cx="54" cy="106" r="3" fill="#fff" opacity=".7"/>
+  <circle cx="64" cy="106" r="3" fill="#fff" opacity=".7"/>
+</svg>

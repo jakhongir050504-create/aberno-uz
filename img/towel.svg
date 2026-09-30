@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="wb" x1="0" x2="1">
+      <stop offset="0" stop-color="#dfe9f3"/>
+      <stop offset=".38" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#cfdcea"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="100" cy="184" rx="80" ry="8" fill="#13213c" opacity=".12"/>
+  <!-- chap rulon -->
+  <path d="M28 40v136a34 10 0 0 0 68 0V40z" fill="url(#wb)"/>
+  <path d="M28 100a34 10 0 0 0 68 0v26a34 10 0 0 1-68 0z" fill="#3d9be0"/>
+  <ellipse cx="62" cy="40" rx="34" ry="10" fill="#fff" stroke="#d3e0ec" stroke-width="1.5"/>
+  <ellipse cx="62" cy="40" rx="11" ry="3.5" fill="#c9a877"/>
+  <!-- o'ng rulon -->
+  <path d="M104 40v136a34 10 0 0 0 68 0V40z" fill="url(#wb)"/>
+  <path d="M104 100a34 10 0 0 0 68 0v26a34 10 0 0 1-68 0z" fill="#3d9be0"/>
+  <ellipse cx="138" cy="40" rx="34" ry="10" fill="#fff" stroke="#d3e0ec" stroke-width="1.5"/>
+  <ellipse cx="138" cy="40" rx="11" ry="3.5" fill="#c9a877"/>
+  <!-- osilib turgan varaq -->
+  <path d="M172 60h8v70l-8 4z" fill="#fff" stroke="#d3e0ec"/>
+  <path d="M172 80h8M172 100h8" stroke="#d3e0ec" stroke-dasharray="2 2"/>
+  <text x="62" y="120" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-weight="800" font-size="12" fill="#fff">BULUT</text>
+  <text x="138" y="120" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-weight="800" font-size="12" fill="#fff">BULUT</text>
+</svg>

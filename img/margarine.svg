@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="mf" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f59a4f"/>
+      <stop offset="1" stop-color="#d9651f"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="100" cy="172" rx="78" ry="9" fill="#13213c" opacity=".14"/>
+  <!-- ustki yuz -->
+  <path d="M30 96l30-24h112l-30 24z" fill="#ffc18c"/>
+  <!-- yon yuz -->
+  <path d="M142 96l30-24v52l-30 38z" fill="#b8521a"/>
+  <!-- old yuz -->
+  <rect x="30" y="96" width="112" height="66" fill="url(#mf)"/>
+  <!-- to'lqin bezak -->
+  <path d="M30 140c18-10 36 10 56 0s38 8 56-2v24H30z" fill="#ffd257"/>
+  <text x="86" y="120" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-weight="700" font-size="17" fill="#fff">Margaritto</text>
+  <text x="86" y="156" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-weight="800" font-size="9" fill="#7a3a0c" letter-spacing="1">MARGARIN</text>
+  <!-- bug'doy boshog'i -->
+  <g fill="#ffd257" stroke="#d4960a" stroke-width="1">
+    <path d="M160 58c0-18 0-30 0-40" stroke-width="2" fill="none"/>
+    <ellipse cx="154" cy="28" rx="4" ry="7" transform="rotate(-25 154 28)"/>
+    <ellipse cx="166" cy="28" rx="4" ry="7" transform="rotate(25 166 28)"/>
+    <ellipse cx="154" cy="42" rx="4" ry="7" transform="rotate(-25 154 42)"/>
+    <ellipse cx="166" cy="42" rx="4" ry="7" transform="rotate(25 166 42)"/>
+    <ellipse cx="160" cy="16" rx="3.5" ry="7"/>
+  </g>
+</svg>

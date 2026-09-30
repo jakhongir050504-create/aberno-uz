@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="ub" x1="0" x2="1">
+      <stop offset="0" stop-color="#e9a514"/>
+      <stop offset=".4" stop-color="#ffd257"/>
+      <stop offset="1" stop-color="#d4960a"/>
+    </linearGradient>
+    <linearGradient id="ul" x1="0" x2="1">
+      <stop offset="0" stop-color="#fff3cf"/>
+      <stop offset=".5" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#f6e3b0"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="100" cy="176" rx="72" ry="10" fill="#13213c" opacity=".14"/>
+  <!-- idish tanasi -->
+  <path d="M34 82l10 82a56 12 0 0 0 112 0l10-82z" fill="url(#ub)"/>
+  <!-- qopqoq -->
+  <path d="M30 70v12a70 16 0 0 0 140 0V70z" fill="url(#ul)"/>
+  <ellipse cx="100" cy="70" rx="70" ry="16" fill="#fff" stroke="#f0d78c" stroke-width="1.5"/>
+  <ellipse cx="100" cy="70" rx="54" ry="11" fill="none" stroke="#f6e3b0" stroke-width="2"/>
+  <!-- yorliq -->
+  <path d="M52 110a52 10 0 0 0 96 0v34a52 10 0 0 1-96 0z" fill="#fff8e3"/>
+  <text x="100" y="132" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-weight="700" font-size="17" fill="#9a6400">Margaritto</text>
+  <text x="100" y="147" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-weight="800" font-size="8.5" fill="#13213c" letter-spacing="1">STOL MARGARINI</text>
+  <text x="100" y="74" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-weight="800" font-size="10" fill="#d4960a">250 g</text>
+</svg>

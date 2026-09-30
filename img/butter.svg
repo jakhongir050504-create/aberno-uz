@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="bf" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd257"/>
+      <stop offset="1" stop-color="#e9a514"/>
+    </linearGradient>
+    <linearGradient id="bs" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c98a06"/>
+      <stop offset="1" stop-color="#a36f00"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="100" cy="170" rx="80" ry="9" fill="#13213c" opacity=".14"/>
+  <!-- ustki yuz -->
+  <path d="M24 92l34-26h120l-34 26z" fill="#ffe08a"/>
+  <path d="M40 88l26-18" stroke="#fff" stroke-width="2" opacity=".6"/>
+  <!-- yon yuz -->
+  <path d="M144 92l34-26v56l-34 38z" fill="url(#bs)"/>
+  <!-- old yuz -->
+  <rect x="24" y="92" width="120" height="68" fill="url(#bf)"/>
+  <!-- yorliq -->
+  <rect x="34" y="102" width="100" height="48" rx="8" fill="#fff8e3"/>
+  <text x="84" y="124" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-weight="700" font-size="16" fill="#9a6400">Margaritto</text>
+  <text x="84" y="140" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-weight="800" font-size="9" fill="#13213c" letter-spacing="1">SARYOGʻ 82,5%</text>
+  <!-- tomchi -->
+  <path d="M160 30c-6 10-10 15-10 21a10 10 0 0 0 20 0c0-6-4-11-10-21z" fill="#ffd257" stroke="#e9a514" stroke-width="1.5"/>
+</svg>

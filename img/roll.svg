@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="rb" x1="0" x2="1">
+      <stop offset="0" stop-color="#dfe9f3"/>
+      <stop offset=".38" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#cfdcea"/>
+    </linearGradient>
+    <linearGradient id="rs" x1="0" x2="1">
+      <stop offset="0" stop-color="#2479b8"/>
+      <stop offset=".4" stop-color="#4aa8ea"/>
+      <stop offset="1" stop-color="#1f6aa3"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="100" cy="182" rx="62" ry="8" fill="#13213c" opacity=".12"/>
+  <path d="M45 50v118a55 15 0 0 0 110 0V50z" fill="url(#rb)"/>
+  <path d="M45 98a55 15 0 0 0 110 0v34a55 15 0 0 1-110 0z" fill="url(#rs)"/>
+  <text x="100" y="128" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-weight="800" font-size="17" fill="#fff" letter-spacing="1">BULUT</text>
+  <path d="M84 74a6 6 0 0 1 1-12 8 8 0 0 1 15-2 6 6 0 0 1 7 7 5 5 0 0 1-1 7z" fill="#3d9be0" opacity=".9"/>
+  <ellipse cx="100" cy="50" rx="55" ry="15" fill="#fff" stroke="#d3e0ec" stroke-width="1.5"/>
+  <ellipse cx="100" cy="50" rx="36" ry="9.5" fill="none" stroke="#e6eef6" stroke-width="1"/>
+  <ellipse cx="100" cy="50" rx="17" ry="5" fill="#c9a877"/>
+  <ellipse cx="100" cy="51" rx="11" ry="3" fill="#7d5f35"/>
+</svg>
