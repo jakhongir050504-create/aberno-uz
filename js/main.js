@@ -5,7 +5,40 @@
   'use strict';
 
   const body = document.body;
+  const root = document.documentElement;
   const header = document.querySelector('.site-header');
+
+  /* ---------- Yorugʻ / qorongʻu rejim ---------- */
+  // Boshlangʻich mavzu <head> ichidagi kichik skriptda oʻrnatiladi (sahifa miltillamasligi uchun).
+  const themeBtn = document.querySelector('.theme-toggle');
+  const systemDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+  function storedTheme() {
+    try { return localStorage.getItem('theme'); } catch (e) { return null; }
+  }
+  function applyTheme(theme) {
+    root.setAttribute('data-theme', theme);
+    if (themeBtn) {
+      const dark = theme === 'dark';
+      themeBtn.setAttribute('aria-pressed', dark);
+      themeBtn.setAttribute('aria-label', dark ? 'Yorugʻ rejimga oʻtish' : 'Qorongʻu rejimga oʻtish');
+      themeBtn.title = themeBtn.getAttribute('aria-label');
+    }
+  }
+  applyTheme(root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light');
+
+  if (themeBtn) {
+    themeBtn.addEventListener('click', function () {
+      const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      applyTheme(next);
+      try { localStorage.setItem('theme', next); } catch (e) { /* saqlab boʻlmasa ham ishlayveradi */ }
+    });
+  }
+  // Foydalanuvchi oʻzi tanlamagan boʻlsa — tizim sozlamasiga ergashamiz
+  systemDark.addEventListener('change', function (e) {
+    const saved = storedTheme();
+    if (saved !== 'light' && saved !== 'dark') applyTheme(e.matches ? 'dark' : 'light');
+  });
 
   /* ---------- Mobil menyu ---------- */
   const burger = document.querySelector('.burger');
