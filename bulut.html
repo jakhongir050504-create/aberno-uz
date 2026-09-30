@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bulut — salfetka va qogʻoz mahsulotlari | Aberno Butters Group</title>
   <meta name="description" content="Bulut — 100% oq sellulozadan tayyorlangan stol salfetkalari, yuz salfetkalari, tualet qogʻozi va oshxona sochiqlari.">
+  <meta name="robots" content="noindex, nofollow">
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,9 +16,12 @@
       try { t = localStorage.getItem('theme'); } catch (e) {}
       if (t !== 'light' && t !== 'dark') t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
       document.documentElement.setAttribute('data-theme', t);
+      var u = null;
+      try { u = sessionStorage.getItem('aberno-unlocked'); } catch (e) {}
+      if (u !== '1') document.documentElement.classList.add('is-locked');
     })();
   </script>
-  <link rel="stylesheet" href="css/style.css?v=2">
+  <link rel="stylesheet" href="css/style.css?v=3">
 </head>
 <body class="theme-bulut">
 
@@ -304,6 +308,6 @@
     <svg class="icon" viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
   </button>
 
-  <script src="js/main.js?v=2"></script>
+  <script src="js/main.js?v=3"></script>
 </body>
 </html>

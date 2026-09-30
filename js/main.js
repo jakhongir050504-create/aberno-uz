@@ -8,6 +8,78 @@
   const root = document.documentElement;
   const header = document.querySelector('.site-header');
 
+  /* ---------- PIN qulf ---------- */
+  // Eslatma: bu faqat brauzer tomonidagi qulf. PIN ochiq holda saqlanmaydi, faqat uning SHA-256 xeshi.
+  const PIN_HASH = '0e1d85352d5b627ca6ebf40a9fb51db38b12bef99abd6187b6e552880450f124';
+  const PIN_SALT = 'aberno:';
+  const UNLOCK_KEY = 'aberno-unlocked';
+
+  function sha256(text) {
+    return crypto.subtle.digest('SHA-256', new TextEncoder().encode(text)).then(function (buf) {
+      return Array.prototype.map.call(new Uint8Array(buf), function (b) {
+        return b.toString(16).padStart(2, '0');
+      }).join('');
+    });
+  }
+
+  if (root.classList.contains('is-locked')) {
+    const gate = document.createElement('div');
+    gate.className = 'pin-gate';
+    gate.innerHTML =
+      '<form class="pin-gate__card" novalidate>' +
+        '<div class="pin-gate__lock"><svg class="icon" viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div>' +
+        '<h1>Sayt himoyalangan</h1>' +
+        '<p>Davom etish uchun PIN kodni kiriting</p>' +
+        '<input class="pin-gate__input" type="password" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="off" placeholder="••••" aria-label="PIN kod" required>' +
+        '<button class="btn btn--gold pin-gate__btn" type="submit">Kirish</button>' +
+        '<div class="pin-gate__error" role="alert"></div>' +
+      '</form>';
+    body.appendChild(gate);
+
+    const form = gate.querySelector('form');
+    const input = gate.querySelector('input');
+    const error = gate.querySelector('.pin-gate__error');
+    let busy = false;
+    input.focus();
+
+    function check() {
+      if (busy) return;
+      const pin = input.value.trim();
+      if (pin.length < 4) {
+        error.textContent = 'PIN kod 4 ta raqamdan iborat';
+        return;
+      }
+      busy = true;
+      sha256(PIN_SALT + pin).then(function (hash) {
+        busy = false;
+        if (hash === PIN_HASH) {
+          try { sessionStorage.setItem(UNLOCK_KEY, '1'); } catch (e) { /* saqlab boʻlmasa, faqat shu sahifa ochiladi */ }
+          root.classList.remove('is-locked');
+          gate.remove();
+          window.dispatchEvent(new Event('scroll'));
+        } else {
+          error.textContent = 'PIN kod notoʻgʻri. Qaytadan urinib koʻring.';
+          gate.classList.remove('is-wrong');
+          void gate.offsetWidth; // animatsiyani qayta ishga tushirish uchun
+          gate.classList.add('is-wrong');
+          input.value = '';
+          input.focus();
+        }
+      });
+    }
+
+    input.addEventListener('input', function () {
+      input.value = input.value.replace(/\D/g, '').slice(0, 4);
+      error.textContent = '';
+      gate.classList.remove('is-wrong');
+      if (input.value.length === 4) check();
+    });
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      check();
+    });
+  }
+
   /* ---------- Yorugʻ / qorongʻu rejim ---------- */
   // Boshlangʻich mavzu <head> ichidagi kichik skriptda oʻrnatiladi (sahifa miltillamasligi uchun).
   const themeBtn = document.querySelector('.theme-toggle');
